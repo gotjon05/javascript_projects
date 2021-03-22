@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    let artist = {
+      name: "Metallica",
+      nationality: "United States",
+      genre: "Metal",
+      members: ['James Hetfield', 'Kirk Hammett', 'Dave Mustaine', 'Lars Ulrich', 'Cliff Burton'],
+      formed: 1981,
+      split: false,
+      albums:[
+        {
+          name:'Ride the lightening',
+          released: 1984
+        },
+        {
+          name: 'Master of the Puppets',
+          released: 1986
+        },
+        {
+          name: 'Metallica',
+          released: 1991
+        }
+    ]
+  }
+    bandInfo = `The ${artist.genre} band ${ artist.name } from ${ artist.nationality} was formed in ${artist.formed}. Members over the years have included ${artist.members}  who have created albums over many genres: ${artist.albums}`;
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
