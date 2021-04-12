@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Skill test of Object-oriented JavaScript</title>
+      </head>
+
+<!-- 
+ ES class syntax 
+-->
+    <script>
+        //creates a new class with a given name using prototype-based inheritance
+        //three initial properties: name, sides, sidelength 
+        //It is a template for JavaScript objects.
+       class Shape{
+            constructor(name, sides, sideLength){
+            this.name = name;
+            this.sides = sides;
+            this.sideLength = sideLength;
+           
+            };        
+            calcPerimeter(){
+                console.log(`the shape ${this.name} has ${this.sides} sides with a total side length of ${this.sides * this.sideLength}`)
+            }
+                
+        }
+    </script>
+
+
+
+
+
+
+
+</html>
