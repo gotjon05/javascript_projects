@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        //Create three variables that hold references to the list (<ul>), <input>, and <button> elements.
+            const list = document.querySelector('ul');
+            const inputs = document.querySelector('input');
+            const buttons = document.querySelector('button');
+
+        //Create three new elements — a list item (<li>), <span>, and <button>, and store them in variables.
+            const new_list = document.createElement('li');
+            const new_span = document.createElement('span');
+            const new_button = document.createElement('button');
+
+        //Append the span and the button as children of the list item.
+            
+
+        //Create a function that will run in response to the button being clicked.
+        buttons.onclick = function(){
+           let current_value = inputs; 
+           let current_value = '';
+
+        }
+        
+
+
+
+    </script>
+  </body>
+</html>
