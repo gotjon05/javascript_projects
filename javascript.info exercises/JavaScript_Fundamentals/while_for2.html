@@ -1,0 +1,31 @@
+<html>
+
+<h1>Find the Prime Numbers of a Number</h1>
+
+
+<script>
+ 
+  let num;
+  num = prompt("Enter a number to receive prime numbers", 0);
+  
+  //check all prime numbers until highest is reached
+  //mod 2 until reaches number given by user
+  //For n = 10 the result will be 2,3,5,7.
+ 
+  nextPrime:
+  for (let i = 2; i <= num; i++) { // for each i...
+    for (let j = 2; j < i; j++) { // look for a divisor..
+      if (i % j == 0) continue nextPrime; // not a prime, go next i
+    }
+
+  alert(i); // a prime
+}
+  
+
+</script>
+
+
+
+
+
+</html>

@@ -34,7 +34,7 @@
         //Create three variables that hold references to the list (<ul>), <input>, and <button> elements.
             const list = document.querySelector('ul');
             const inputs = document.querySelector('input');
-            const buttons = document.querySelector('button');
+            const button = document.querySelector('button');
 
         //Create three new elements — a list item (<li>), <span>, and <button>, and store them in variables.
             const new_list = document.createElement('li');
@@ -42,11 +42,14 @@
             const new_button = document.createElement('button');
 
         //Append the span and the button as children of the list item.
+            new_span.appendChild(new_list);
+            new_button.appendChild(new_list);
             
 
+
         //Create a function that will run in response to the button being clicked.
-        buttons.onclick = function(){
-           let current_value = inputs; 
+        button.onclick = function(){
+           let current_value = input.value; 
            let current_value = '';
 
         }
